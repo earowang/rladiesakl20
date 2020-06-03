@@ -1,0 +1,80 @@
+---
+title: "Presenting like a kunoichi ![kunoichi](img/kunoichi.svg) with xaringan `r emo::ji('crossed_swords')`"
+type: "meetup"
+author: "Earo Wang"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["libs/remark.css"]
+    lib_dir: libs
+    nature:
+      ratio: 16:9
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+---
+
+```{r setup, echo = FALSE, cache = FALSE, results = 'hide'}
+library(knitr)
+options(htmltools.dir.version = FALSE, tibble.width = 60, tibble.print_min = 6)
+opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE, comment = "#>",
+  fig.path = 'figure/', fig.align = 'center', fig.height = 8.5,
+  out.width = '100%', fig.show = 'hold', fig.retina = 3,
+  cache = TRUE, cache.path = 'cache/'
+)
+```
+
+## Kia Ora
+
+Self-intro
+
+---
+
+![](https://thesis.earo.me/img/phd-commits.png)
+
+---
+
+.pull-left[
+## Opinionated
+(kunoichi)
+]
+.pull-right[
+## Not opinionated
+(xaringan)
+]
+
+---
+
+## Kunoichi presenter
+
+* Unconventional presentation
+* Embed personality into presentation
+  + font
+  + colour theme
+* Contrast to novel academic presentation
+
+---
+
+## Eye-catching title
+
+* clever title (e.g. some rstudio conf titles)
+* background image
+* twitter/gh handles
+
+---
+
+## Motivating well
+
+---
+
+
+
+---
+
+[slides.earo.me/rladies-akl20](https://slides.earo.me/rladies-akl20)
