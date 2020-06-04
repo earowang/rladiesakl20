@@ -1,5 +1,5 @@
 ---
-title: "Presenting like a kunoichi ![kunoichi](img/kunoichi.svg) with xaringan `r emo::ji('crossed_swords')`"
+title: "Presenting like a kunoichi ![kunoichi](img/kunoichi.svg) with `r emo::ji('crossed_swords')`aringan"
 type: "meetup"
 author: "Earo Wang"
 date: ""
@@ -85,6 +85,7 @@ Self-intro
 ## Eye-catching title
 
 * clever title (e.g. some rstudio conf titles)
+* choose google font
 * background image
 * twitter/gh handles
 
@@ -106,8 +107,7 @@ Self-intro
 
 ---
 
-## `r emo::ji("crossed_swords")`
-## xaringan
+## `r emo::ji("crossed_swords")`aringan
 
 ???
 
@@ -119,4 +119,4 @@ We know how to be a kunoichi, we need tooling
 
 ---
 
-[slides.earo.me/rladies-akl20](https://slides.earo.me/rladies-akl20)
+[slides.earo.me/rladiesakl20](https://slides.earo.me/rladiesakl20)
