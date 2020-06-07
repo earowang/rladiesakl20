@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat');
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600);
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css");
 
 body {
   font-family: 'Assistant', sans-serif;
@@ -94,6 +94,10 @@ ul li li:before {
 
 .center {
   text-align: center;
+}
+
+img {
+  width: 100%;
 }
 
 a, a > code {
@@ -283,4 +287,11 @@ blockquote:before {
   height: 6.5rem;
   width: auto;
   display: inline;
+}
+
+.pipeline img {
+  display: block;
+  position: absolute;
+  margin-left: 28%;
+  margin-top: 20%;
 }

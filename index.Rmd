@@ -19,9 +19,14 @@ output:
         </div>
 ---
 
+class: middle
+
 ```{r setup, echo = FALSE, cache = FALSE, results = 'hide'}
 library(knitr)
-options(htmltools.dir.version = FALSE, tibble.width = 60, tibble.print_min = 6)
+options(
+  htmltools.dir.version = FALSE, tibble.width = 60, tibble.print_min = 6,
+  crayon.enabled = TRUE
+)
 opts_chunk$set(
   echo = FALSE, warning = FALSE, message = FALSE, comment = "#>",
   fig.path = 'figure/', fig.align = 'center', fig.height = 8.5,
@@ -30,23 +35,50 @@ opts_chunk$set(
 )
 ```
 
-## Kia Ora
+.pull-left[
+```{r hello}
+cowsay::say("Kia Ora! I'm Earo.", by = "anxiouscat")
+```
+]
 
-Self-intro
+--
+
+.pull-right[
+I'm a ~~lecturer~~ zoomer.
+
+.large[```r
+data[c(
+  "instructor",
+  "researcher",
+  "visualiser" 
+)]
+```]
+
+.large[.center[<i class="fas fa-arrows-alt-v"></i>]]
+
+.center[<i class="fab fa-r-project"></i> package developer]
+]
 
 ---
+
+## My PhD timeline
 
 ![](https://thesis.earo.me/img/phd-commits.png)
 
 ---
 
+class: inverse middle center
+
 .pull-left[
-## Opinionated
-(kunoichi)
+<br>
+# Opinionated kunoichi
+<hr>
+# Non-opinionated xaringan
 ]
 .pull-right[
-## Not opinionated
-(xaringan)
+.animate__animated.animate__bounceInDown[
+![kunoichi](img/kunoichi.svg)
+]
 ]
 
 ---
@@ -75,19 +107,20 @@ Self-intro
 
 ---
 
-## Self-explanatory slides
+.pull-left[
+<br>
+## .center[Designing title slide]
 
-* No need to watch your talk
-* The right amount of text
-
----
-
-## Eye-catching title
-
-* clever title (e.g. some rstudio conf titles)
-* choose google font
-* background image
-* twitter/gh handles
+1. Bigger than big font size
+2. Background image
+3. Google fonts
+4. Handles
+5. URLs
+]
+.pull-right[
+![](https://slides.earo.me/rstudioconf19/img/slides-title.png)
+![](img/alison-jsm.png)
+]
 
 ---
 
@@ -95,15 +128,66 @@ Self-intro
 
 ---
 
-## Key messages first
+class: center middle
+
+background-image: url(img/tsibble-useR.png)
+background-size: cover
+
+--
+
+<img src="img/cat-eye-rolling.gif" style="width:30%">
 
 ---
 
-## `r emo::ji("camera_flash")` Featured slide
+.left-column[
+<br>
+<br>
+## .center[.red[time series verse]]
+]
+.right-column[
+<br>
+<br>
+<img src="img/ts-model.png", width = "100%">
+]
+
+### .center[WAT!`r emo::ji("scream")`]
 
 ---
 
-## Closing slide with resources
+background-image: url(img/tsibble-model.png)
+background-size: 70%
+background-position: 91% 38%
+
+.left-column[
+<br>
+<br>
+<br>
+<br>
+## .center[tidyver.red[ts]]
+]
+.right-column[
+.animate__animated.animate__rollIn.animate__slower[
+.pipeline[<img src="img/tsibble.png", style="width:150px">]
+]
+]
+
+---
+
+class: center middle inverse
+
+# Thank you!
+
+--
+
+# Questions?
+
+--
+
+# Fin
+
+---
+
+## `r emo::ji("camera_flash")` Closing slide with `r emo::ji("link")`
 
 ---
 
@@ -115,7 +199,7 @@ We know how to be a kunoichi, we need tooling
 
 ---
 
-## 
+## Learn? Unbox and use it!
 
 ---
 
