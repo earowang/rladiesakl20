@@ -124,7 +124,11 @@ class: inverse middle center
 
 ---
 
-## Motivating well
+class: inverse middle
+
+# Motivating well .blue[`beta`]
+<hr>
+## `r emo::ji("woman_facepalming")`
 
 ---
 
@@ -136,6 +140,14 @@ background-size: cover
 --
 
 <img src="img/cat-eye-rolling.gif" style="width:30%">
+
+---
+
+class: inverse middle
+
+## Motivating well .blue[`v1.0.0`]
+<hr>
+## `r emo::ji("dancer")`
 
 ---
 
@@ -187,7 +199,24 @@ class: center middle inverse
 
 ---
 
-## `r emo::ji("camera_flash")` Closing slide with `r emo::ji("link")`
+## .center[`r emo::ji("camera_flash")` Closing slide with `r emo::ji("link")``r emo::ji("link")``r emo::ji("link")`]
+
+.pull-left[
+<br>
+.center[.card[
+<img src="img/rladiesakl20.png">
+.small[[slides.earo.me/rladiesakl20](https://slides.earo.me/rladiesakl20)]
+]
+]
+]
+.pull-right[
+<br>
+`r emo::ji("memo")` [Carpe Talk](https://www.tidyverse.org/blog/2018/07/carpe-talk/) by Jenny Bryan and Mara Averick
+<hr>
+`r emo::ji("memo")` [Guidelines I follow when giving talks](https://www.amelia.mn/blog/misc/2020/04/16/presentations.html) by Amelia McNamara
+<hr>
+`r emo::ji("memo")` [How to Present Good](http://www.rebeccabarter.com/blog/2017-02-02-how-to-present-good/) by Rebecca Barter
+]
 
 ---
 
@@ -200,6 +229,10 @@ We know how to be a kunoichi, we need tooling
 ---
 
 ## Learn? Unbox and use it!
+
+* Jot down thoughts in markdown
+* Prettify it with css
+* Interact with JS
 
 ---
 
