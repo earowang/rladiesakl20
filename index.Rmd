@@ -12,6 +12,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      beforeInit: "libs/macros.js"
       slideNumberFormat: |
         <div class="progress-bar-container">
           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
@@ -63,7 +64,7 @@ data[c(
 
 ## My PhD timeline
 
-![](https://thesis.earo.me/img/phd-commits.png)
+![:scale 100%](https://thesis.earo.me/img/phd-commits.png)
 
 ---
 
@@ -118,8 +119,8 @@ class: inverse middle center
 5. URLs
 ]
 .pull-right[
-![](https://slides.earo.me/rstudioconf19/img/slides-title.png)
-![](img/alison-jsm.png)
+![:scale 100%](https://slides.earo.me/rstudioconf19/img/slides-title.png)
+![:scale 100%](img/alison-jsm.png)
 ]
 
 ---
@@ -139,7 +140,7 @@ background-size: cover
 
 --
 
-<img src="img/cat-eye-rolling.gif" style="width:30%">
+![:scale 30%](img/cat-eye-rolling.gif)
 
 ---
 
@@ -159,7 +160,7 @@ class: inverse middle
 .right-column[
 <br>
 <br>
-<img src="img/ts-model.png", width = "100%">
+![:scale 100%](img/ts-model.png)
 ]
 
 ### .center[WAT!`r emo::ji("scream")`]
@@ -204,7 +205,7 @@ class: center middle inverse
 .pull-left[
 <br>
 .center[.card[
-<img src="img/rladiesakl20.png">
+![](img/rladiesakl20.png)
 .small[[slides.earo.me/rladiesakl20](https://slides.earo.me/rladiesakl20)]
 ]
 ]
@@ -232,15 +233,15 @@ We know how to be a kunoichi, we need tooling
 
 ---
 
+## Learn? Unbox and use!
+
 .pull-left[
 ```r
 install.packages("xaringan")
 ```
-![](img/rstudio-xaringan.png)
+.center[![:scale 75%](img/rstudio-xaringan.png)]
 ]
 .pull-right[
-### Learn?
-### Unbox and happy presenting!
 ```yml
 ---
 title: "Presentation Ninja"
@@ -327,14 +328,14 @@ install.packages("xaringan") #<<
 ### - prettify
 ]
 .right-column[
-## `r emo::ji("package")` xaringanthemer
+## `r emo::ji("art")` xaringanthemer
 ```yaml
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
 ```
 
-![](https://raw.githubusercontent.com/gadenbuie/xaringanthemer/assets/examples.gif)
+![:scale 100%](https://raw.githubusercontent.com/gadenbuie/xaringanthemer/assets/examples.gif)
 ]
 
 ---
@@ -345,7 +346,7 @@ output:
 ]
 .right-column[
 ## <i class="fab fa-github"></i> [emitanaka/ninja-theme](https://github.com/emitanaka/ninja-theme)
-![](https://raw.githubusercontent.com/emitanaka/ninja-theme/master/docs/themes/kunoichi/images/kunoichi-showcase.gif)
+![:scale 100%](https://raw.githubusercontent.com/emitanaka/ninja-theme/master/docs/themes/kunoichi/images/kunoichi-showcase.gif)
 ]
 
 ---
@@ -356,6 +357,96 @@ output:
 ### - interact
 ]
 .right-column[
+## `r emo::ji("stopwatch")` countdown
+
+````markdown
+```{r}`r ''`
+# install.packages("countdown")
+countdown::countdown(minutes = 0, seconds = 42)
+```
+````
+
+`r countdown::countdown(minutes = 0, seconds = 42)`
+
+.pull-left[
+.center[
+.alert[
+.purple[
+## Keep Calm
+## and
+## Countdown
+## <i class="fas fa-stopwatch-20"></i>
+]
+]
+]
+]
+.pull-right[
+.large[## .center[`r emo::ji("point_down")`]]
+]
+]
+
+---
+
+.left-column[
+### - `r emo::ji("writing_hand")`
+### - prettify
+### - interact
+]
+.right-column[
+## `r emo::ji("exploding_head")` xaringanExtra
+
+```{r panelset}
+xaringanExtra::use_panelset()
+```
+
+
+````markdown
+```{r echo = FALSE}`r ''`
+# remotes::install_github("gadenbuie/xaringanExtra")
+xaringanExtra::use_panelset()
+```
+````
+
+
+````md
+.panelset[
+.panel[.panel-name[Code]
+<!-- Code -->
+]
+
+.panel[.panel-name[Plot]
+<!-- Plot -->
+]
+]
+````
+]
+
+---
+
+class: middle
+
+.left-column[
+### - `r emo::ji("writing_hand")`
+### - prettify
+### - interact
+]
+.right-column[
+.panelset[
+.panel[.panel-name[Code]
+
+```{r ggplot, fig.show = "hide", echo = TRUE}
+library(ggplot2)
+ggplot(mpg, aes(displ, hwy, colour = class)) +
+  geom_point()
+```
+]
+
+.panel[.panel-name[Plot]
+
+```{r ref.label = "ggplot", fig.height = 5, out.width = "80%"}
+```
+]
+]
 ]
 
 ---

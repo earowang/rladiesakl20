@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="author" content="Earo Wang" />
     <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
     <link rel="stylesheet" href="libs/remark.css" type="text/css" />
   </head>
   <body>
@@ -66,7 +70,7 @@ data[c(
 
 ## My PhD timeline
 
-![](https://thesis.earo.me/img/phd-commits.png)
+![:scale 100%](https://thesis.earo.me/img/phd-commits.png)
 
 ---
 
@@ -121,8 +125,8 @@ class: inverse middle center
 5. URLs
 ]
 .pull-right[
-![](https://slides.earo.me/rstudioconf19/img/slides-title.png)
-![](img/alison-jsm.png)
+![:scale 100%](https://slides.earo.me/rstudioconf19/img/slides-title.png)
+![:scale 100%](img/alison-jsm.png)
 ]
 
 ---
@@ -142,7 +146,7 @@ background-size: cover
 
 --
 
-&lt;img src="img/cat-eye-rolling.gif" style="width:30%"&gt;
+![:scale 30%](img/cat-eye-rolling.gif)
 
 ---
 
@@ -162,7 +166,7 @@ class: inverse middle
 .right-column[
 &lt;br&gt;
 &lt;br&gt;
-&lt;img src="img/ts-model.png", width = "100%"&gt;
+![:scale 100%](img/ts-model.png)
 ]
 
 ### .center[WAT!😱]
@@ -207,7 +211,7 @@ class: center middle inverse
 .pull-left[
 &lt;br&gt;
 .center[.card[
-&lt;img src="img/rladiesakl20.png"&gt;
+![](img/rladiesakl20.png)
 .small[[slides.earo.me/rladiesakl20](https://slides.earo.me/rladiesakl20)]
 ]
 ]
@@ -235,22 +239,22 @@ We know how to be a kunoichi, we need tooling
 
 ---
 
+## Learn? Unbox and use!
+
 .pull-left[
 ```r
 install.packages("xaringan")
 ```
-![](img/rstudio-xaringan.png)
+.center[![:scale 75%](img/rstudio-xaringan.png)]
 ]
 .pull-right[
-### Learn?
-### Unbox and happy presenting!
 ```yml
 ---
 title: "Presentation Ninja"
 subtitle: "⚔&lt;br/&gt;with xaringan"
 author: "Yihui Xie"
 institute: "RStudio, PBC"
-date: "2016/12/12 (updated: 2020-06-11)"
+date: "2016/12/12 (updated: 2020-06-12)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -331,14 +335,14 @@ class: inverse middle
 ### - prettify
 ]
 .right-column[
-## 📦 xaringanthemer
+## 🎨 xaringanthemer
 ```yaml
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
 ```
 
-![](https://raw.githubusercontent.com/gadenbuie/xaringanthemer/assets/examples.gif)
+![:scale 100%](https://raw.githubusercontent.com/gadenbuie/xaringanthemer/assets/examples.gif)
 ]
 
 ---
@@ -349,7 +353,7 @@ output:
 ]
 .right-column[
 ## &lt;i class="fab fa-github"&gt;&lt;/i&gt; [emitanaka/ninja-theme](https://github.com/emitanaka/ninja-theme)
-![](https://raw.githubusercontent.com/emitanaka/ninja-theme/master/docs/themes/kunoichi/images/kunoichi-showcase.gif)
+![:scale 100%](https://raw.githubusercontent.com/emitanaka/ninja-theme/master/docs/themes/kunoichi/images/kunoichi-showcase.gif)
 ]
 
 ---
@@ -360,6 +364,96 @@ output:
 ### - interact
 ]
 .right-column[
+## ⏱ countdown
+
+````markdown
+```{r}
+# install.packages("countdown")
+countdown::countdown(minutes = 0, seconds = 42)
+```
+````
+
+<div class="countdown" id="timer_5ee2b72a" style="right:0;bottom:0;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">42</span></code>
+</div>
+
+.pull-left[
+.center[
+.alert[
+.purple[
+## Keep Calm
+## and
+## Countdown
+## &lt;i class="fas fa-stopwatch-20"&gt;&lt;/i&gt;
+]
+]
+]
+]
+.pull-right[
+.large[## .center[👇]]
+]
+]
+
+---
+
+.left-column[
+### - ✍️
+### - prettify
+### - interact
+]
+.right-column[
+## 🤯 xaringanExtra
+
+
+
+
+````markdown
+```{r echo = FALSE}
+# remotes::install_github("gadenbuie/xaringanExtra")
+xaringanExtra::use_panelset()
+```
+````
+
+
+````md
+.panelset[
+.panel[.panel-name[Code]
+&lt;!-- Code --&gt;
+]
+
+.panel[.panel-name[Plot]
+&lt;!-- Plot --&gt;
+]
+]
+````
+]
+
+---
+
+class: middle
+
+.left-column[
+### - ✍️
+### - prettify
+### - interact
+]
+.right-column[
+.panelset[
+.panel[.panel-name[Code]
+
+
+```r
+library(ggplot2)
+ggplot(mpg, aes(displ, hwy, colour = class)) +
+  geom_point()
+```
+]
+
+.panel[.panel-name[Plot]
+
+&lt;img src="figure/unnamed-chunk-2-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+]
 ]
 
 ---
@@ -368,6 +462,7 @@ output:
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="libs/macros.js"></script>
 <script>var slideshow = remark.create({
 "ratio": "16:9",
 "highlightStyle": "github",
