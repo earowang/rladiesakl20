@@ -225,17 +225,142 @@ class: center middle inverse
 
 ## ⚔️aringan
 
+* Jot down thoughts in markdown
+* Prettify it with css
+* Interact with JS
+
 ???
 
 We know how to be a kunoichi, we need tooling
 
 ---
 
-## Learn? Unbox and use it!
+.pull-left[
+```r
+install.packages("xaringan")
+```
+![](img/rstudio-xaringan.png)
+]
+.pull-right[
+### Learn?
+### Unbox and happy presenting!
+```yml
+---
+title: "Presentation Ninja"
+subtitle: "⚔&lt;br/&gt;with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: 2020-06-11)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```
+]
 
-* Jot down thoughts in markdown
-* Prettify it with css
-* Interact with JS
+---
+
+## .center[📽]
+
+.center[
+&lt;iframe src="https://slides.yihui.org/xaringan/" frameborder="0" height="480" width="640"&gt;
+&lt;/iframe&gt;
+]
+
+.footnote[`&lt;iframe&gt;` to embed [slides.yihui.org/xaringan/](https://slides.yihui.org/xaringan/) within the current document]
+
+---
+
+class: middle
+
+.left-column[
+### - ✍️
+]
+.right-column[
+````markdown
+---
+background-image: url(img/kunoichi.svg)
+background-position: 50% 50%
+background-size: cover
+class: inverse middle
+
+## Presenting like a kunoichi with ⚔️aringan
+
+1. Jot down thoughts in Markdown
+2. Prettify with CSS
+3. Interact with JS
+
+```{r eval = FALSE}
+install.packages("xaringan") #&lt;&lt;
+```
+
+.footnote[image credit: Emi Tanaka]
+---
+
+````
+]
+
+---
+
+background-image: url(img/kunoichi.svg)
+background-position: 50% 50%
+background-size: cover
+class: inverse middle
+
+## Presenting like a kunoichi with ⚔️aringan
+
+1. Jot down thoughts in Markdown
+2. Prettify with CSS
+3. Interact with JS
+
+
+```r
+*install.packages("xaringan")
+```
+
+.footnote[image credit: Emi Tanaka]
+
+---
+
+.left-column[
+### - ✍️
+### - prettify
+]
+.right-column[
+## 📦 xaringanthemer
+```yaml
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+```
+
+![](https://raw.githubusercontent.com/gadenbuie/xaringanthemer/assets/examples.gif)
+]
+
+---
+
+.left-column[
+### - ✍️
+### - prettify
+]
+.right-column[
+## &lt;i class="fab fa-github"&gt;&lt;/i&gt; [emitanaka/ninja-theme](https://github.com/emitanaka/ninja-theme)
+![](https://raw.githubusercontent.com/emitanaka/ninja-theme/master/docs/themes/kunoichi/images/kunoichi-showcase.gif)
+]
+
+---
+
+.left-column[
+### - ✍️
+### - prettify
+### - interact
+]
+.right-column[
+]
 
 ---
 
