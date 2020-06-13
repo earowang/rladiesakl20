@@ -51,19 +51,14 @@ class: middle
 --
 
 .pull-right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
 I'm a ~~lecturer~~ zoomer.
 
-.large[```r
-data[c(
-  "instructor",
-  "researcher",
-  "visualiser" 
-)]
-```]
+&lt;i class="fab fa-r-project"&gt;&lt;/i&gt; package developer
 
-.large[.center[&lt;i class="fas fa-arrows-alt-v"&gt;&lt;/i&gt;]]
-
-.center[&lt;i class="fab fa-r-project"&gt;&lt;/i&gt; package developer]
+.typed[]
 ]
 
 ---
@@ -90,15 +85,33 @@ class: inverse middle center
 
 ---
 
-## Kunoichi presenter
+class: inverse middle center
+
+.pull-left[
+.animate__animated.animate__bounceInUp[
+![kunoichi](img/kunoichi.svg)
+]
+]
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+# HTML.orange[&lt;i class="fab fa-html5"&gt;&lt;/i&gt;]
+&lt;hr&gt;
+# Creative
+# Unconventional
+]
+
+???
 
 * Unconventional presentation
+* Creative
 * Embed personality into presentation
   + font
   + colour theme
 * Contrast to novel academic presentation
+* Leverage the whole web technology
 
----
+???
 
 ## Creative formats
 
@@ -111,6 +124,19 @@ class: inverse middle center
 * Laugh alone (no passive laugh)
 * Presentation vs conversation tone
 * Not sure when to pause
+
+---
+
+## .right[🛠 Crafting]
+
+&lt;br&gt;
+.alert[
+.large[
+1. Title slide
+2. Motivating slide
+3. Closing slide
+]
+]
 
 ---
 
@@ -133,7 +159,7 @@ class: inverse middle center
 
 class: inverse middle
 
-# Motivating well .blue[`beta`]
+# Motivating ???? .blue[`beta`]
 &lt;hr&gt;
 ## 🤦‍♀
 
@@ -206,6 +232,16 @@ class: center middle inverse
 
 ---
 
+class: center middle inverse
+
+.animate__animated.animate__hinge[
+# Thank you!
+# Questions?
+# Fin
+]
+
+---
+
 ## .center[📸 Closing slide with 🔗🔗🔗]
 
 .pull-left[
@@ -227,14 +263,25 @@ class: center middle inverse
 
 ---
 
-## ⚔️aringan
+class: inverse middle
 
-* Jot down thoughts in markdown
-* Prettify it with css
-* Interact with JS
+.right[
+# ⚔️aringan
+]
+
+--
+
+.large[
+.blue[1.] Jot down thoughts in &lt;i class="fab fa-markdown"&gt;&lt;/i&gt;
+
+.blue[2.] Prettify with &lt;i class="fab fa-css3-alt"&gt;&lt;/i&gt;
+
+.blue[3.] Interact with &lt;i class="fab fa-js"&gt;&lt;/i&gt;
+]
 
 ???
 
+HTML5 slides
 We know how to be a kunoichi, we need tooling
 
 ---
@@ -254,7 +301,7 @@ title: "Presentation Ninja"
 subtitle: "⚔&lt;br/&gt;with xaringan"
 author: "Yihui Xie"
 institute: "RStudio, PBC"
-date: "2016/12/12 (updated: 2020-06-12)"
+date: "2016/12/12 (updated: 2020-06-13)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -268,9 +315,8 @@ output:
 
 ---
 
-## .center[📽]
-
 .center[
+👇 (nested) slides
 &lt;iframe src="https://slides.yihui.org/xaringan/" frameborder="0" height="480" width="640"&gt;
 &lt;/iframe&gt;
 ]
@@ -279,10 +325,17 @@ output:
 
 ---
 
+class: inverse right middle
+
+# Chap. &lt;i class="fab fa-markdown"&gt;&lt;/i&gt;
+
+---
+
 class: middle
 
 .left-column[
-### - ✍️
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
 ]
 .right-column[
 ````markdown
@@ -330,8 +383,43 @@ class: inverse middle
 
 ---
 
+class: inverse right middle
+
+# Chap. &lt;i class="fab fa-css3-alt"&gt;&lt;/i&gt;
+
+---
+
 .left-column[
-### - ✍️
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
+### - prettify
+]
+.right-column[
+## built-in themes
+
+```
+ [1] "chocolate-fonts"  "chocolate"        "default-fonts"    "default"         
+ [5] "duke-blue"        "fc-fonts"         "fc"               "hygge-duke"      
+ [9] "hygge"            "ki-fonts"         "ki"               "kunoichi"        
+[13] "lucy-fonts"       "lucy"             "metropolis-fonts" "metropolis"      
+[17] "middlebury-fonts" "middlebury"       "ninjutsu"         "rladies-fonts"   
+[21] "rladies"          "robot-fonts"      "robot"            "rutgers-fonts"   
+[25] "rutgers"          "shinobi"          "tamu-fonts"       "tamu"            
+[29] "uo-fonts"         "uo"               "uol-fonts"        "uol"             
+```
+
+```yaml
+output:
+  xaringan::moon_reader:
+    css: [default, rladies, rladies-fonts]
+```
+]
+
+---
+
+.left-column[
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
 ### - prettify
 ]
 .right-column[
@@ -348,7 +436,8 @@ output:
 ---
 
 .left-column[
-### - ✍️
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
 ### - prettify
 ]
 .right-column[
@@ -359,7 +448,55 @@ output:
 ---
 
 .left-column[
-### - ✍️
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
+### - prettify
+]
+.right-column[
+## DIY `custom.css`
+```css
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&amp;display=swap');
+.encoding {
+  font-family: 'Libre Barcode 128 Text', cursive;
+}
+```
+
+.pull-left[
+```yml
+---
+output:
+  xaringan::moon_reader:
+    css: [default, custom.css]
+---
+.encoding[
+This message is encoded.
+]
+```
+]
+
+.pull-right[
+```html
+&lt;div class="encoding"&gt;
+  &lt;p&gt;This message is encoded.&lt;/p&gt;
+&lt;/div&gt;
+```
+.alert.center[.encoding[
+This message is encoded.
+]]
+]
+]
+
+---
+
+class: inverse right middle
+
+# Chap. &lt;i class="fab fa-js"&gt;&lt;/i&gt;
+
+---
+
+.left-column[
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
 ### - prettify
 ### - interact
 ]
@@ -373,7 +510,7 @@ countdown::countdown(minutes = 0, seconds = 42)
 ```
 ````
 
-<div class="countdown" id="timer_5ee2b72a" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ee4a601" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">42</span></code>
 </div>
 
@@ -397,7 +534,8 @@ countdown::countdown(minutes = 0, seconds = 42)
 ---
 
 .left-column[
-### - ✍️
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
 ### - prettify
 ### - interact
 ]
@@ -417,27 +555,29 @@ xaringanExtra::use_panelset()
 
 ````md
 .panelset[
-.panel[.panel-name[Code]
-&lt;!-- Code --&gt;
-]
+  .panel[.panel-name[Code]
+  &lt;!-- Code --&gt;
+  ]
 
-.panel[.panel-name[Plot]
-&lt;!-- Plot --&gt;
-]
+  .panel[.panel-name[Plot]
+  &lt;!-- Plot --&gt;
+  ]
 ]
 ````
 ]
 
 ---
 
-class: middle
-
 .left-column[
-### - ✍️
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
 ### - prettify
 ### - interact
 ]
 .right-column[
+.right[
+### 📑
+]
 .panelset[
 .panel[.panel-name[Code]
 
@@ -451,14 +591,86 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
 
 .panel[.panel-name[Plot]
 
-&lt;img src="figure/unnamed-chunk-2-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figure/unnamed-chunk-3-1.png" width="70%" style="display: block; margin: auto;" /&gt;
 ]
 ]
 ]
 
 ---
 
-[slides.earo.me/rladiesakl20](https://slides.earo.me/rladiesakl20)
+.left-column[
+.center[![:scale 50%](https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png)]
+### - markdown
+### - prettify
+### - interact
+]
+.right-column[
+## Use `custom.js`
+&lt;br&gt;
+```yml
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: "custom.js"
+```
+
+.center[.typed-eg[]]
+
+
+.footnote[Typing is powered by [`typed.js`](http://mattboldt.github.io/typed.js/).]
+]
+
+---
+
+* htmlwidgets
+* gganimate
+* gt
+
+???
+
+## portable || dynamic
+
+---
+
+class: center middle
+
+## xaringan in class
+
+.card[
+[![](img/monash.png)](https://wcd.numbat.space/slides/week07-abs-data)
+]
+.card[
+[![](img/georgia.png)](https://datavizm20.classes.andrewheiss.com/slides/01-slides.html)
+]
+
+---
+
+class: middle
+
+.pull-left[
+.center[
+.card[
+![](img/rladiesakl20.png)
+.small[
+[slides.earo.me/rladiesakl20](https://slides.earo.me/rladiesakl20)  
+]
+]
+
+&lt;i class="fab fa-github"&gt;&lt;/i&gt; [earowang/rladiesakl20](https://github.com/earowang/rladiesakl20)
+]
+]
+
+.pull-right[
+&lt;i class="fas fa-images"&gt;&lt;/i&gt; [remark.js](https://remarkjs.com)
+
+&lt;i class="fas fa-images"&gt;&lt;/i&gt; [Presentation ninja](https://slides.yihui.org/xaringan)
+
+&lt;i class="fas fa-images"&gt;&lt;/i&gt; [Making slides in R Markdown](https://arm.rbind.io/slides/xaringan.html)
+
+&lt;i class="fas fa-book-open"&gt;&lt;/i&gt; [xaringan wiki](https://github.com/yihui/xaringan/wiki)
+
+&lt;i class="fas fa-blog"&gt;&lt;/i&gt; [Infinite moon reader](https://yihui.org/en/2019/02/ultimate-inf-mr/)
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -552,6 +764,22 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+<script>
+const options = {
+  strings: [
+    '<pre>data["instructor"]</pre>', '<pre>data["researcher"]</pre>', '<pre>data["visualiser"]</pre>'
+  ],
+  typeSpeed: 60,
+  backSpeed: 20,
+  cursorChar: '',
+  loop: true
+};
+
+const typed = new Typed('.typed', options);
+const typed2 = new Typed('.typed-eg', options);
+</script>
 
 <script>
 slideshow._releaseMath = function(el) {
