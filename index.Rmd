@@ -57,11 +57,30 @@ I'm a ~~lecturer~~ zoomer.
 .typed[]
 ]
 
+???
+
+* Kia ora koutou.
+* Most of us will feel nervous when start presenting, like this anxious cat. But will calm down
+* Joined as a lecturer, turned out a zoomer, lecturer in pyjamas
+* The only thing I managed to upskill is zoom in the past 6 months.
+* At Uni, I teach data science, do research on data str, data wrangling, data vis
+* I make my research methods available in the form of R packages, developed a bunch of R packages.
+
 ---
 
 ## My PhD timeline
 
 ![:scale 100%](https://thesis.earo.me/img/phd-commits.png)
+
+???
+
+* Completed my PhD at Monash U
+* This beeswarm plot: gh commits
+* As a PhD student, my academic activities are roughly grouped into 3 cat: writing, coding, and presenting
+* 3 chapters, 3 packages, presenting those packages for ts.
+* In the past 3 years, I've given 15 talks, formal or informal. Academic seminars, conferences, meetups, workshops.
+* I started trying out html5 slides when I started PhD in 2016. I finally settled with xaringan when it was first out in 2016 Dec.
+* Interestingly, the first public talk I gave using xaringan, at the wombat conference. Yihui was sitting there. He was invited for the keynote.
 
 ---
 
@@ -74,17 +93,26 @@ class: inverse middle center
 # Non-opinionated xaringan
 ]
 .pull-right[
-.animate__animated.animate__bounceInDown[
-![kunoichi](img/kunoichi.svg)
+![:scale 45%](img/kunoichi.svg)
+
+![:scale 45%](https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
 ]
-]
+
+???
+
+* divided into 2 parts
+* first: how to be a kunoichi presenter, which is quite opinionated
+* Bc I'm going to share what I've learnt while presenting. No hard rules about presenting
+* Grad schools deliver workshops on presentation tips, 
+* We learn presenting by presenting
+* And the second part is not opinionated. It's about xaringan.
 
 ---
 
 class: inverse middle center
 
 .pull-left[
-.animate__animated.animate__bounceInUp[
+.animate__animated.animate__bounceInDown[
 ![kunoichi](img/kunoichi.svg)
 ]
 ]
@@ -99,15 +127,11 @@ class: inverse middle center
 
 ???
 
-* Unconventional presentation
-* Creative
-* Embed personality into presentation
-  + font
-  + colour theme
-* Contrast to novel academic presentation
-* Leverage the whole web technology
-
-???
+* Kunoichi is a Japanese word for female ninja, an unconventional presenter
+* We can creatively use our tones, gestures, facial expressions, but mostly visuals on the slides to express our thoughts.
+* To design those visuals, we need to choose tools, and tools shouldn't be a constraint, when we want to be creative and expressive.
+* Using latex beamer, I can't embed youtube videos, interactive graphics.
+* But HTML5 slides leverages the whole web technology, and allow me to produce creative visuals when needed.
 
 ## Creative formats
 
@@ -128,11 +152,17 @@ class: inverse middle center
 <br>
 .alert[
 .large[
-1. Title slide
+1. Opening slide
 2. Motivating slide
 3. Closing slide
 ]
 ]
+
+???
+
+* No matter what type of talk we give, (lightning) we'll have these 3 slides:
+* We do want to craft them well. Bc they are on the screen much longer than the rest of the slides.
+* I'll use my own slides as case studies.
 
 ---
 
@@ -151,6 +181,19 @@ class: inverse middle center
 ![:scale 100%](img/alison-jsm.png)
 ]
 
+???
+
+* Title slide stays longer on the screen, bc you set up the computer
+* In short talks, you introduce yourself in the beginning without an extra intro slide. 
+* font: cliche
+* image: evocative. I don't do it, lazy, rearrange the text positions.
+* Occasionally, I chose evocative fonts. Another good thing about H5 slides is we can use google fonts on the fly.
+* FA icon, but now have no idea why I chose a Halloween colour theme for a conference held in Jan.
+* wondering if I presented tidy ts, or spooky ts
+* handles: live tweeting
+* URLs (I don't share my slides url upfront anymore, to focus on my talk atm)
+* But venue is big, screen is small, URLs first
+
 ---
 
 class: inverse middle
@@ -158,6 +201,13 @@ class: inverse middle
 # Motivating ???? .blue[`beta`]
 <hr>
 ## `r emo::ji("woman_facepalming")`
+
+???
+
+* A critical lesson I learnt from my past talks is motivation matters.
+* Motivating well will help set the tone for a successful talk. Bc motivation slides come after the title.
+* To accumulate audience's interest and grab their attention, the first 5 minutes is the key.
+* I'll give you a facepalming version of how I motivated the tsibble package
 
 ---
 
@@ -170,6 +220,15 @@ background-size: cover
 
 ![:scale 30%](img/cat-eye-rolling.gif)
 
+???
+
+* I gave my first tsibble talk for an internal department talk. This is the motivation page of tsibble in the early stage.
+* The targeted audience is my PhD committee, a small group of faculties and PhD students.
+* I thought I was telling my committee. Look I'm not talking about software, I'm talking about matrix. I'm doing serious research.
+* The problem is I repeated this slide at useR! and NYC R meetups. Diverse backgrounds
+* This slide is made for insiders who know ts in R well, and a narrow focus.
+* As you could imagine, half of my audience would lost the interests after this slide.
+
 ---
 
 class: inverse middle
@@ -177,6 +236,11 @@ class: inverse middle
 ## Motivating well .blue[`v1.0.0`]
 <hr>
 ## `r emo::ji("dancer")`
+
+???
+
+* Redesign
+* Helped me to position the tsibble and write the tsibble paper
 
 ---
 
@@ -192,6 +256,10 @@ class: inverse middle
 ]
 
 ### .center[WAT!`r emo::ji("scream")`]
+
+???
+
+Include audience who are not just insiders, but also data scientists in general.
 
 ---
 
@@ -211,6 +279,13 @@ background-position: 91% 38%
 .pipeline[<img src="img/tsibble.png", style="width:150px">]
 ]
 ]
+
+???
+
+* The focus of the tsibble is a workflow facilitator, not a matrix vs a data frame.
+* A big picture
+* Attract users who don't play with time series data.
+* A mixed group, go for breath over depth.
 
 ---
 
@@ -236,6 +311,12 @@ class: center middle inverse
 # Fin
 ]
 
+???
+
+* One slide is wasted.
+* This slide is the background when you answering questions.
+* But almost zero information.
+
 ---
 
 ## .center[`r emo::ji("camera_flash")` Closing slide with `r emo::ji("link")``r emo::ji("link")``r emo::ji("link")`]
@@ -257,18 +338,26 @@ class: center middle inverse
 `r emo::ji("memo")` [How to Present Good](http://www.rebeccabarter.com/blog/2017-02-02-how-to-present-good/) by Rebecca Barter
 ]
 
+???
+
+* Ending talks with resources, I'll say "Thank you"
+* If useful and helpful, they take out their phones and fire up the cameras. They will do their homeworks
+* 3 blog posts and 4 great presenters in the R community.
+* Bc slides are in html, you probably would like a short URL to link to the slides.
+
 ---
 
 class: inverse middle
 
 .right[
-# `r emo::ji("crossed_swords")`aringan
+# Presenting is fun
+# `r emo::ji("crossed_swords")`aringan is .purple[creative fun]
 ]
 
 --
 
 .large[
-.blue[1.] Jot down thoughts in <i class="fab fa-markdown"></i>
+.blue[1.] Jot down in <i class="fab fa-markdown"></i>
 
 .blue[2.] Prettify with <i class="fab fa-css3-alt"></i>
 
@@ -277,8 +366,16 @@ class: inverse middle
 
 ???
 
-HTML5 slides
-We know how to be a kunoichi, we need tooling
+* Presenting is fun, and xaringan adds more creative fun on top it.
+* I hope I accumulate your interests for xaringan, time to talk about it.
+* You might think, xaringan is cool and fancy
+* The most appealing reason to use xaringan for me is it naturally fits into presentation workflow.
+
+1. pour down all your thoughts and ideas in markdown
+2. style them with css
+3. for more engaging slides, add js
+
+Unlike other h5 slides, e.g slidyfy, it's highly customisable.
 
 ---
 
@@ -299,7 +396,7 @@ author: "Yihui Xie"
 institute: "RStudio, PBC"
 date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
-  xaringan::moon_reader:
+* xaringan::moon_reader:
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -309,6 +406,14 @@ output:
 ```
 ]
 
+???
+
+* We don't learn markdown. Similarly, we don't learn xaringan.
+
+* It generates an example document for you
+* Like other RMarkdown documents
+* Click "knit" button, you'll get this slide
+
 ---
 
 .center[
@@ -317,13 +422,23 @@ output:
 </iframe>
 ]
 
-.footnote[`<iframe>` to embed [slides.yihui.org/xaringan/](https://slides.yihui.org/xaringan/) within the current document]
+.footnote[`<iframe>` to embed [slides.yihui.org/xaringan](https://slides.yihui.org/xaringan/) within the current document]
+
+???
+
+* It's not a static image. It's official xaringan slides nested within my slides.
+* p3: pronouciation
+* It documents detailed usage, check it out after this talk.
 
 ---
 
 class: inverse right middle
 
 # Chap. <i class="fab fa-markdown"></i>
+
+???
+
+I'll continue with my cookbook. The first chapter: md
 
 ---
 
@@ -343,7 +458,7 @@ class: inverse middle
 
 ## Presenting like a kunoichi with `r emo::ji("crossed_swords")`aringan
 
-1. Jot down thoughts in Markdown
+1. Jot down in Markdown
 2. Prettify with CSS
 3. Interact with JS
 
@@ -366,7 +481,7 @@ class: inverse middle
 
 ## Presenting like a kunoichi with `r emo::ji("crossed_swords")`aringan
 
-1. Jot down thoughts in Markdown
+1. Jot down in Markdown
 2. Prettify with CSS
 3. Interact with JS
 
@@ -381,6 +496,10 @@ install.packages("xaringan") #<<
 class: inverse right middle
 
 # Chap. <i class="fab fa-css3-alt"></i>
+
+???
+
+Next chapter is styling your slides with css.
 
 ---
 
@@ -398,9 +517,15 @@ names(xaringan:::list_css())
 ```yaml
 output:
   xaringan::moon_reader:
-    css: [default, rladies, rladies-fonts]
+*   css: [default, rladies, rladies-fonts]
 ```
 ]
+
+???
+
+* Don't have time to write your own CSS?
+* The default theme is not bad, but get boring quickly when you see the same style everywhere.
+* It bundles many user-contributed themes.
 
 ---
 
@@ -414,11 +539,15 @@ output:
 ```yaml
 output:
   xaringan::moon_reader:
-    css: xaringan-themer.css
+*   css: xaringan-themer.css
 ```
 
 ![:scale 100%](https://raw.githubusercontent.com/gadenbuie/xaringanthemer/assets/examples.gif)
 ]
+
+???
+
+Not a cup of tea?
 
 ---
 
@@ -440,7 +569,7 @@ output:
 ### - prettify
 ]
 .right-column[
-## DIY `custom.css`
+## Ultimate `custom.css`
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
 .encoding {
@@ -473,11 +602,23 @@ This message is encoded.
 ]
 ]
 
+???
+
+* Believe it or not, the ultimate theme is creating your own theme.
+* As you progress towards kunoichi, no theme will express yourself properly until your theme comes out.
+
 ---
 
 class: inverse right middle
 
 # Chap. <i class="fab fa-js"></i>
+
+???
+
+* Stylish-looking slides are not enough?
+* Engaging with JS
+* An excellent educational tool
+* If you teach with R, xaringan for teaching slides
 
 ---
 
@@ -516,6 +657,14 @@ countdown::countdown(minutes = 0, seconds = 42)
 ]
 ]
 
+
+???
+
+* Another package from Garrick
+* Your turn in class and workshops
+* Works in RMarkdown documents and RStudio viewers
+* Anna, is this in your trying-out list now?
+
 ---
 
 .left-column[
@@ -552,6 +701,12 @@ xaringanExtra::use_panelset()
 ]
 ````
 ]
+
+???
+
+* Yet another package from Garrick
+* Many enhanced and useful features to xaringan
+* I like the most is creating panels in a slide
 
 ---
 
@@ -597,8 +752,8 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
 ```yml
 output:
   xaringan::moon_reader:
-    includes:
-      after_body: "custom.js"
+*   includes:
+*     after_body: "custom.js"
 ```
 
 .center[.typed-eg[]]
@@ -606,15 +761,9 @@ output:
 .footnote[Typing is powered by [`typed.js`](http://mattboldt.github.io/typed.js/).]
 ]
 
----
-
-* htmlwidgets
-* gganimate
-* gt
-
 ???
 
-## portable || dynamic
+Use audio input js to control, so speak "Next page" for next page
 
 ---
 
@@ -628,6 +777,22 @@ class: center middle
 .card[
 [![](img/georgia.png)](https://datavizm20.classes.andrewheiss.com/slides/01-slides.html)
 ]
+
+---
+
+class: middle center
+
+.pull-left[
+]
+.pull-right[
+# .large[<i class="fab fa-html5"></i> `r emo::ji("heavy_plus_sign")` <i class="fab fa-r-project"></i>]
+![:scale 40%](https://raw.githubusercontent.com/thomasp85/gganimate/master/man/figures/logo.svg)
+![:scale 40%](https://raw.githubusercontent.com/rstudio/gt/master/man/figures/logo.svg)
+]
+
+???
+
+## portable || dynamic
 
 ---
 
