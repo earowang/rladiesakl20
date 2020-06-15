@@ -191,7 +191,7 @@ class: inverse middle center
 * In short talks, you introduce yourself in the beginning without an extra intro slide. 
 * font: cliche
 * image: evocative. I don't do it, lazy, rearrange the text positions.
-* Occasionally, I chose evocative fonts. Another good thing about H5 slides is we can use google fonts on the fly.
+* Occasionally, I chose evocative fonts. Another good thing about H5 slides is we can use google fonts on the fly. 991
 * FA icon, but now have no idea why I chose a Halloween colour theme for a conference held in Jan.
 * wondering if I presented tidy ts, or spooky ts
 * handles: live tweeting
@@ -372,14 +372,14 @@ class: inverse middle
 
 * Presenting is fun, and xaringan adds more creative fun on top it.
 * I hope I accumulate your interests for xaringan, time to talk about it.
-* You might think, xaringan is cool and fancy
+* You might think, xaringan is cool, fancy, and dynamic
 * The most appealing reason to use xaringan for me is it naturally fits into presentation workflow.
 
 1. pour down all your thoughts and ideas in markdown
 2. style them with css
 3. for more engaging slides, add js
 
-Unlike other h5 slides, e.g slidyfy, it's highly customisable.
+Unlike other h5 slides or latex beamer, e.g slidyfy, it's highly customisable and easy to customise.
 
 ---
 
@@ -413,9 +413,10 @@ output:
 ???
 
 * We don't learn markdown. Similarly, we don't learn xaringan.
-
+* install
+* in rstudio, create rmarkdown
 * It generates an example document for you
-* Like other RMarkdown documents
+* Like other RMarkdown documents, yaml, go through yaml
 * Click "knit" button, you'll get this slide
 
 ---
@@ -430,7 +431,7 @@ output:
 
 ???
 
-* It's not a static image. It's official xaringan slides nested within my slides.
+* This's not a static image. It's official xaringan slides nested within my slides.
 * p3: pronouciation
 * It documents detailed usage, check it out after this talk.
 
@@ -442,7 +443,7 @@ class: inverse right middle
 
 ???
 
-I'll continue with my cookbook. The first chapter: md
+I'll continue with my cookbook. The first chapter: mark your thoughts down in Rmd
 
 ---
 
@@ -504,7 +505,7 @@ class: inverse right middle
 
 ???
 
-Next chapter is styling your slides with css.
+Next chapter is styling your slides with css. Like all stuff on the web, css controls the style.
 
 ---
 
@@ -538,6 +539,7 @@ output:
 
 * Don't have time to write your own CSS?
 * The default theme is not bad, but get boring quickly when you see the same style everywhere.
+* That's Yihui's motivation to make xaringan, he got bored with default beamer slides.
 * It bundles many user-contributed themes.
 
 ---
@@ -548,7 +550,7 @@ output:
 ### - prettify
 ]
 .right-column[
-## 🎨 xaringanthemer
+## 🎨 [xaringanthemer](https://pkg.garrickadenbuie.com/xaringanthemer)
 ```yaml
 output:
   xaringan::moon_reader:
@@ -573,6 +575,13 @@ Not a cup of tea?
 ## &lt;i class="fab fa-github"&gt;&lt;/i&gt; [emitanaka/ninja-theme](https://github.com/emitanaka/ninja-theme)
 ![:scale 100%](https://raw.githubusercontent.com/emitanaka/ninja-theme/master/docs/themes/kunoichi/images/kunoichi-showcase.gif)
 ]
+
+???
+
+* The kunoichi theme made by a cool kunoichi Emi
+* It inspired this talk's title
+* Layouts, colours, and animations bundled into one theme
+* It's a repo rather than a package
 
 ---
 
@@ -617,7 +626,7 @@ This message is encoded.
 
 ???
 
-* Believe it or not, the ultimate theme is creating your own theme.
+* Believe it or not, the ultimate theme is creating your own one.
 * As you progress towards kunoichi, no theme will express yourself properly until your theme comes out.
 
 ---
@@ -628,10 +637,10 @@ class: inverse right middle
 
 ???
 
-* Stylish-looking slides are not enough?
-* Engaging with JS
-* An excellent educational tool
-* If you teach with R, xaringan for teaching slides
+* Impress your audience with stylish slides
+* Engage with them by adding JS
+* Interactive graphics always look impressive
+* An excellent tool for teaching, particularly if you teach with R
 
 ---
 
@@ -642,7 +651,7 @@ class: inverse right middle
 ### - interact
 ]
 .right-column[
-## ⏱ countdown
+## ⏱ [countdown](https://pkg.garrickadenbuie.com/countdown)
 
 ````markdown
 ```{r}
@@ -651,7 +660,7 @@ countdown::countdown(minutes = 0, seconds = 42)
 ```
 ````
 
-<div class="countdown" id="timer_5ee6cad8" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ee72f9a" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">42</span></code>
 </div>
 
@@ -676,7 +685,8 @@ countdown::countdown(minutes = 0, seconds = 42)
 ???
 
 * Another package from Garrick
-* Your turn in class and workshops
+* Your turn / small exercises in class and workshops
+* I'll give you 42 seconds to try out with this package, start now!
 * Works in RMarkdown documents and RStudio viewers
 * Anna, is this in your trying-out list now?
 
@@ -689,7 +699,7 @@ countdown::countdown(minutes = 0, seconds = 42)
 ### - interact
 ]
 .right-column[
-## 🤯 xaringanExtra
+## 🤯 [xaringanExtra](http://pkg.garrickadenbuie.com/xaringanExtra)
 
 
 
@@ -718,8 +728,8 @@ xaringanExtra::use_panelset()
 ???
 
 * Yet another package from Garrick
-* Many enhanced and useful features to xaringan
-* I like the most is creating panels in a slide
+* Many enhanced and useful features, great additions to xaringan
+* One of my favourites is creating panels in a slide
 
 ---
 
@@ -750,6 +760,11 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
 ]
 ]
 ]
+
+???
+
+* code and then plot
+* or the other way around
 
 ---
 
@@ -791,6 +806,11 @@ class: center middle
 [![](img/georgia.png)](https://datavizm20.classes.andrewheiss.com/slides/01-slides.html)
 ]
 
+???
+
+* Give 2 eg how xaringan used in class
+* WCD at Monash Uni and Data vis at Georgia state
+
 ---
 
 class: middle center
@@ -805,7 +825,12 @@ class: middle center
 
 ???
 
-## portable || dynamic
+* Use H5 slides with R, sky is not the limit.
+* htmlwidgets for making plotly, leaflet
+* use gganimate to embed incredible animations
+* gt (grammar of tables) for amazing tables, talk/tutorials/workshops on gt?
+
+portable || dynamic
 
 ---
 
