@@ -633,7 +633,7 @@ class: inverse right middle
 
 ````markdown
 ```{r}`r ''`
-# install.packages("countdown")
+# remotes::install_github("gadenbuie/countdown")
 countdown::countdown(minutes = 0, seconds = 42)
 ```
 ````
