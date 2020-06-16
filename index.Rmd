@@ -79,7 +79,9 @@ I'm a ~~lecturer~~ zoomer.
 * As a PhD student, my academic activities are roughly grouped into 3 cat: writing, coding, and presenting
 * 3 chapters, 3 packages, presenting those packages for ts.
 * In the past 3 years, I've given 15 talks, formal or informal. Academic seminars, conferences, meetups, workshops.
-* I started trying out html5 slides when I started PhD in 2016. I finally settled with xaringan when it was first out in 2016 Dec.
+* I started trying out html5 slides when I started PhD in 2016. I was bored with latex beamer.
+* The most impressive h5 slides is impress.js. It's a competing distraction from your talk for audience. They get excited not for your work but this presentation format.
+* I finally settled with xaringan when it was first out in 2016 Dec.
 * Interestingly, the first public talk I gave using xaringan, at the wombat conference. Yihui was sitting there. He was invited for the keynote.
 
 ---
@@ -104,7 +106,7 @@ class: inverse middle center
 * first: how to be a kunoichi presenter, which is quite opinionated
 * Bc I'm going to share what I've learnt while presenting. No hard rules about presenting
 * Grad schools deliver workshops on presentation tips, 
-* We learn presenting by presenting
+* We learn presenting by presenting ourself
 * And the second part is not opinionated. It's about xaringan.
 
 ---
@@ -128,10 +130,11 @@ class: inverse middle center
 ???
 
 * Kunoichi is a Japanese word for female ninja, an unconventional presenter
-* We can creatively use our tones, gestures, facial expressions, but mostly visuals on the slides to express our thoughts.
+* We can creatively use our tones, gestures, facial expressions, but mostly visuals on the slides to express our thoughts, and communicate our findings.
 * To design those visuals, we need to choose tools, and tools shouldn't be a constraint, when we want to be creative and expressive.
 * Using latex beamer, I can't embed youtube videos, interactive graphics.
 * But HTML5 slides leverages the whole web technology, and allow me to produce creative visuals when needed.
+* JSM talk, your presentation is so different. Why not present different?
 
 ## Creative formats
 
@@ -222,7 +225,7 @@ background-size: cover
 
 ???
 
-* I gave my first tsibble talk for an internal department talk. This is the motivation page of tsibble in the early stage.
+* My first tsibble talk was an internal department talk. This is the motivation page of tsibble in the early stage.
 * The targeted audience is my PhD committee, a small group of faculties and PhD students.
 * I thought I was telling my committee. Look I'm not talking about software, I'm talking about matrix. I'm doing serious research.
 * The problem is I repeated this slide at useR! and NYC R meetups. Diverse backgrounds
@@ -239,8 +242,8 @@ class: inverse middle
 
 ???
 
-* Redesign
-* Helped me to position the tsibble and write the tsibble paper
+* Rethink and Redesign tsibble motivation
+* After a couple of iterations, I'm finally happy with the current version, helped me to write my tsibble paper too.
 
 ---
 
@@ -282,10 +285,10 @@ background-position: 91% 38%
 
 ???
 
-* The focus of the tsibble is a workflow facilitator, not a matrix vs a data frame.
-* A big picture
+* I switched my focus for tsibble, more than a matrix vs a data frame, but a workflow facilitator
+* Particularly designed this cool animation for tsibble to fill the gap and drop into a larger context
 * Attract users who don't play with time series data.
-* A mixed group, go for breath over depth.
+* Now I spend lots of time on designing motivation slide.
 
 ---
 
@@ -313,8 +316,7 @@ class: center middle inverse
 
 ???
 
-* One slide is wasted.
-* This slide is the background when you answering questions.
+* The closing slide is an important background when you answering questions.
 * But almost zero information.
 
 ---
@@ -408,10 +410,10 @@ output:
 
 ???
 
-* We don't learn markdown. Similarly, we don't learn xaringan.
+* We don't learn markdown. Similarly, we don't learn xaringan. No such a thing called "learning curve"
 * install
 * in rstudio, create rmarkdown
-* It generates an example document for you
+* It generates an example document for you, full of markdown tips
 * Like other RMarkdown documents, yaml, go through yaml
 * Click "knit" button, you'll get this slide
 
@@ -428,7 +430,7 @@ output:
 ???
 
 * This's not a static image. It's official xaringan slides nested within my slides.
-* p3: pronouciation
+* The biggest mystery is how to pronouce the package: p3, derived from a popular jp anime
 * It documents detailed usage, check it out after this talk.
 
 ---
@@ -549,7 +551,8 @@ output:
 
 ???
 
-Not a cup of tea?
+* Not a cup of tea for default themes?
+* Monotone, duotones
 
 ---
 
